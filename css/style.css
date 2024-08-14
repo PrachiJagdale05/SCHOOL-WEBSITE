@@ -1,0 +1,157 @@
+/* styles.css */
+
+/* Custom Colors */
+:root {
+    --primary-color: #007bff; /* Bootstrap Primary */
+    --secondary-color: #6c757d; /* Bootstrap Secondary */
+    --dark-color: #343a40; /* Bootstrap Dark */
+    --light-color: #f8f9fa; /* Bootstrap Light */
+    --text-color: #212529; /* Bootstrap Darker Text */
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--light-color);
+}
+
+/* Header & Navbar */
+header {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-right: 10px;
+    color: var(--light-color) !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 3rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 1.25rem;
+}
+
+/* Section Headings */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Contact Form */
+form .form-control {
+    border-radius: 0.5rem;
+    border: 1px solid var(--secondary-color);
+    transition: border-color 0.3s ease-in-out;
+}
+
+form .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form button[type="submit"] {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .jumbotron {
+        padding: 2rem 1rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
